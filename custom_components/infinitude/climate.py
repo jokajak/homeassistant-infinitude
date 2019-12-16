@@ -276,7 +276,7 @@ class InfinitudeZone(ClimateDevice):
         self.activity_scheduled_start = None
         self.activity_next = None
         self.activity_next_start = None
-        dt = datetime.datetime.strptime(get_safe(self.system_status, "localTime")[:-6],
+        dt = datetime.datetime.strptime(get_safe(self.system_status, "localTime"),
                                         "%Y-%m-%dT%H:%M:%S")  # Strip the TZ offset, since this is already in local time
         while self.activity_next is None:
             day_name = dt.strftime("%A")

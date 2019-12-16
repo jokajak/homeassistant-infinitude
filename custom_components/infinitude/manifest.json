@@ -1,8 +1,8 @@
 {
   "domain": "infinitude",
   "name": "Carrier Infinity via Infinitude Proxy",
-  "documentation": "https://github.com/MizterB/homeassistant-infinitude",
+  "documentation": "https://github.com/jokajak/homeassistant-infinitude",
   "dependencies": [],
-  "codeowners": ["@MizterB"],
+  "codeowners": ["@jokajak"],
   "requirements": []
 }

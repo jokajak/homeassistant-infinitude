@@ -7,7 +7,7 @@ Home Assistant custom component for controlling Carrier Infinity Touch thermosta
 
 1. Create a `custom_components` directory within your Home Assistant `config` directory if it does not already exist.
 
-2. [Download this repository](https://github.com/MizterB/homeassistant-infinitude/archive/master.zip).
+2. [Download this repository](https://github.com/jokajak/homeassistant-infinitude/archive/master.zip).
 
 3. Copy `custom_components/infinitude` from the repository into Home Assistant's `custom_components` directory.
 
@@ -23,7 +23,7 @@ As this is not included in the default custom component list, add the following 
 ```yaml
 custom_updater:
   component_urls:
-    - https://raw.githubusercontent.com/MizterB/homeassistant-infinitude/master/custom_components.json
+    - https://raw.githubusercontent.com/jokajak/homeassistant-infinitude/master/custom_components.json
 ```
 
 # Configuration
@@ -40,6 +40,9 @@ climate:
 ```
 Custom zone names are optional, and are applied in ascending order (zones 1-8).  If not provided, the zone name is retrieved from the thermostat itself.
 ## Changelog
+*0.7*
+- Update repo location. Thanks @MizterB!
+- Update date time interpretation string
 *0.6*
 - Rewritten for compatibility with the new climate spec in HA .96
 - New presets available to quickly change activities and manage hold settings:
